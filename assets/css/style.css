@@ -6,9 +6,9 @@
 }
 
 body{
-    background-color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    background-image: linear-gradient(to left top, #0d6efd, #3d4eb5, #383374, #251c3a, #030105);
 }
 
 /* ----------------UTILITY---------------- */
@@ -51,8 +51,14 @@ body{
     background-color: white;
 }
 
-#start{
+#play{
     padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    color: blueviolet;
+    background-color: white;
 }
 
 h2{
