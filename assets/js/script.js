@@ -1,14 +1,27 @@
 const container = document.querySelector ('.container');
-let elementsPerRow = 10;
-const randomIds = [];
+let elementsPerRow;
 
 const btn = document.getElementById('play');
 btn.addEventListener('click', function(){
+    const difficultyChosen = document.getElementById('selectDifficulty').value;
+    elementsPerRow = difficulty(difficultyChosen);
     console.log("----------");
     document.getElementById('play')
     container.innerHTML = '';
     init(elementsPerRow);
 });
+
+function difficulty(difficultyChosen){
+    if (difficultyChosen === "hard") {
+        return 10;
+    }
+    else if (difficultyChosen === "medium") {
+        return 9;
+    }
+    else {
+        return 7;
+    }
+}
 
 function init(numElements){
     const totalSqares = Math.pow(numElements, 2);

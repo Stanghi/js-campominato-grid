@@ -51,8 +51,14 @@ body{
     background-color: white;
 }
 
+.right-side{
+    color: blueviolet;
+}
+
+#selectDifficulty,
 #play{
     padding: 5px;
+    margin-left: 10px;
     cursor: pointer;
     font-weight: bold;
     border: 1px solid blueviolet;
